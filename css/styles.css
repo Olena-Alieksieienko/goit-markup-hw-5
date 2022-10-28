@@ -131,10 +131,9 @@ img {
   display: block;
   position: relative;
   padding-bottom: 28px;
-
 }
 
-.header-link::after {
+.header-link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -151,11 +150,9 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.header-link:hover::after {
+.header-link.current:hover::after {
   opacity: 1;
 }
-
-
 
 .header-list .header-link {
   color: var(--title-text-color);
