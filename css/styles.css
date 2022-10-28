@@ -213,11 +213,17 @@ img {
   border: 0px;
   border-radius: 4px;
   padding: 10px 0;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .hero-button:hover,
-.hero-button:focus {
-  cursor: pointer;
+.hero-button:focus { 
   background-color: var(--hover-btn-color);
 }
 
