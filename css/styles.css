@@ -129,9 +129,9 @@ img {
 
 .header-link {
   display: block;
-  text-decoration: none;
-  color: currentColor;
   position: relative;
+  padding-bottom: 28px;
+
 }
 
 .header-link::after {
@@ -139,6 +139,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
+
 
   display: block;
   width: 100%;
