@@ -434,6 +434,10 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-duration), var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function), var(--transition-timing-function);
 }
 
 .employees-soc-icon {
@@ -442,12 +446,14 @@ img {
 
 .employees-soc-link:hover,
 .employees-soc-link:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
+  outline: 0;
 }
 
 .employees-soc-link:hover .employees-soc-icon,
 .employees-soc-link:focus .employees-soc-icon {
   fill: var(--secondary-accent-color);
+  outline: 0;
 }
 
 /* ----------  Постійні клієнти  ---------- */
@@ -485,6 +491,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition-property: border-color, fill;
+  transition-duration: var(--transition-duration), var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function), var(--transition-timing-function);
 }
 
 .cliens-icon {
@@ -494,11 +504,13 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
+  outline: 0;
 }
 
 .clients-link:hover .cliens-icon,
 .clients-link:focus .cliens-icon {
   fill: var(--accent-color);
+  outline: 0;
 }
 
 /* ----------Футер---------- */
