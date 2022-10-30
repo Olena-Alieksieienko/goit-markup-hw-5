@@ -23,7 +23,8 @@ html {
   --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
   --portfolio-item-border-color: #eeeeee;
   --fill-icon-color: #afb1b8;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -149,11 +150,16 @@ img {
 
 .header-list .header-link {
   color: var(--title-text-color);
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header-list .header-link:hover,
 .header-list .header-link:focus {
   color: var(--accent-color);
+  outline: 0;
 }
 
 .header-list .header-link.current {
@@ -175,6 +181,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   vertical-align: middle;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header-mail:hover,
@@ -182,6 +192,7 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+  outline: 0;
 }
 
 .contact-icon {
@@ -236,11 +247,11 @@ img {
   padding: 10px 0;
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function);
+  /* transition: background-color var(--transition-duration) var(--transition-timing-function); */
 
-  /* transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .hero-button:hover,
