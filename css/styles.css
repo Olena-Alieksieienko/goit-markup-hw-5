@@ -245,7 +245,7 @@ img {
   border: 0px;
   border-radius: 4px;
   padding: 10px 0;
-  cursor: pointer;
+
 
   /* transition: background-color var(--transition-duration) var(--transition-timing-function); */
 
@@ -256,7 +256,9 @@ img {
 
 .hero-button:hover,
 .hero-button:focus { 
+  cursor: pointer;
   background-color: var(--hover-btn-color);
+  outline: 0;
 }
 
 /* ------------ Переваги ------------  */
@@ -748,7 +750,7 @@ transform: translateY(0);
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
 /* Стан коли модалка закрита */
@@ -773,6 +775,7 @@ transform: translateY(0);
 
 .modal-close:hover {
   fill: var(--hover-btn-color);
+
 }
 
 .backdrop.is-hidden {
