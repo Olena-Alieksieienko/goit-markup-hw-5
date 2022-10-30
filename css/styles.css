@@ -331,17 +331,20 @@ img {
 
 .about-item-top-text {
   position: absolute;
+  bottom: 0;
   width: 370px;
   height: 70px;
-  bottom: 0;
-  padding: 27px 107px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: var(--secondary-accent-color);
-  background-color: rgba(47, 48, 58, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+background: rgba(47, 48, 58, 0.8);
 }
 
 
