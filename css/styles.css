@@ -143,14 +143,9 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-
-  /* opacity: 0;
-  transition: opacity 250ms var(--timing-function); */
 }
 
-.header-link.current:hover::after {
-  /* opacity: 1; */
-}
+
 
 .header-list .header-link {
   color: var(--title-text-color);
