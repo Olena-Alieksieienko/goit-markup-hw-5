@@ -130,12 +130,14 @@ img {
 .header-link {
   display: block;
   position: relative;
+
 }
 
 .header-link.current::after {
   content: '';
   position: absolute;
   left: 0;
+
   bottom: -28px;
 
   display: block;
